@@ -1,12 +1,4 @@
----
-title: Preferences
-description: 
-published: true
-date: 2021-01-28T21:00:56.560Z
-tags: 
-editor: undefined
-dateCreated: 2021-01-28T20:40:12.674Z
----
+# Preferences
 
 Preferences for Invidious can be stored in a cookie named `PREFS`.  This cookie can be set on the Invidious Preferences page.
 

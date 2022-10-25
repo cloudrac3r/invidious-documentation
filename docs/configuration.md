@@ -1,16 +1,8 @@
----
-title: Configuration
-description: 
-published: true
-date: 2021-01-28T21:00:18.252Z
-tags: 
-editor: undefined
-dateCreated: 2021-01-28T20:39:13.768Z
----
+# Configuration
 
 ### What can be configured and what are these configuration options?
 
-The configuration file is located at [invidious/config/config.yml](https://github.com/iv-org/invidious/blob/master/config/config.yml).
+The configuration file is located at [invidious/config/config.yml](https://github.com/iv-org/invidious/blob/master/config/config.example.yml).
 
 - `channel_threads` (default `1`) Number of threads to use for crawling videos from channels
 
@@ -74,6 +66,8 @@ db:
 
 - `host_binding` (default `0.0.0.0`) Default host for HTTP server
 
-- `cookies` (default ``) Cookies to be used when connecting to YouTube
+- `cookies` (default `nil`) Cookies to be used when connecting to YouTube
 
 - `captcha_key` (default `nil`) [Anti-Captcha](https://anti-captcha.com/) API key for solving YouTube CAPTCHAs, see [#886](https://github.com/iv-org/invidious/issues/886).
+
+- `popular_enabled` (default `false`) Whether to display popular videos of the instance.

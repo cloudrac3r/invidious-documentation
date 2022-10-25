@@ -1,12 +1,4 @@
----
-title: Authenticated-Endpoints
-description: 
-published: true
-date: 2021-01-28T21:00:15.031Z
-tags: 
-editor: undefined
-dateCreated: 2021-01-28T20:39:08.568Z
----
+# Authenticated Endpoints
 
 All endpoints under namespace `/api/v1/auth` require authentication.
 
@@ -37,9 +29,9 @@ Examples:
 
 - `POST:playlists*`: authorizes `POST` methods to _any_ endpoint under `/api/v1/auth/playlists` (`/api/v1/auth/playlists`, `/api/v1/playlists/:id/videos`, etc.)
 
-- `:playlists/*`: authorizes \_any method to endpoints under `/api/v1/auth/playlists/` (`/api/v1/auth/playlists/:id`, `/api/v1/playlists/:id/videos`, etc.)
+- `:playlists/*`: authorizes _any_ method to endpoints under `/api/v1/auth/playlists/` (`/api/v1/auth/playlists/:id`, `/api/v1/playlists/:id/videos`, etc.)
 
-- `GET:playlists/IVPAAAAAAA`: authorizes `GET` only to playlist `IVPAAAAAA`.
+- `GET:playlists/IVPAAAAAAA`: authorizes `GET` only to playlist `IVPAAAAAAA`.
 
 - `:preferences`: authorizes _any_ method to `/api/v1/auth/preferences`
 

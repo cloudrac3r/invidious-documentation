@@ -1,16 +1,8 @@
----
-title: API
-description: 
-published: true
-date: 2021-01-28T21:00:04.505Z
-tags: 
-editor: undefined
-dateCreated: 2021-01-28T20:38:53.557Z
----
+# API
 
 ### Language
 
-All endpoints that return a JSON body support `&hl=LANGUAGE` for translating fields into the desired language. A list of languages are provided in [List of URL parameters](./List-of-URL-parameters).
+All endpoints that return a JSON body support `&hl=LANGUAGE` for translating fields into the desired language. A list of languages are provided in [List of URL parameters](./url-parameters.md).
 
 ### Pretty
 
@@ -225,26 +217,6 @@ source: "youtube", "reddit" (default: youtube)
 continuation: String
 ```
 
-##### GET `/api/v1/insights/:id`
-
-**Will always return 510: `YouTube has removed publicly-available analytics`\***
-
-> Schema:
-
-```javascript
-{
-    "viewCount": Int64,
-    "timeWatchedText": String,
-    "subscriptionsDriven": Int32,
-    "shares": Int32,
-    "avgViewDurationSeconds": Int32,
-
-    "graphData": {
-        // ...
-    }
-}
-```
-
 ##### GET `/api/v1/captions/:id`
 
 > Schema:
@@ -315,39 +287,6 @@ Parameters:
 ```
 type: "music", "gaming", "news", "movies"
 region: ISO 3166 country code (default: "US")
-```
-
-##### GET `/api/v1/top`
-
-> Schema:
-
-```javascript
-[
-  {
-    "title": String,
-    "videoId": String,
-    "videoThumbnails": [
-      {
-        "quality": String,
-        "url": String,
-        "width": Int32,
-        "height": Int32
-      }
-    ],
-
-    "lengthSeconds": Int32,
-    "viewCount": Int64,
-
-    "author": String,
-    "authorId": String,
-    "authorUrl": String,
-
-    "published": Int64,
-    "publishedText": String,
-    "description": String,
-    "descriptionHtml": String
-  }
-]
 ```
 
 ##### GET `/api/v1/popular`
